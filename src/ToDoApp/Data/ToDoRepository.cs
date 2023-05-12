@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-using System.Data.SQLite;
 using Dapper;
 using ToDoApp.Models;
 
