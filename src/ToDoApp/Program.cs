@@ -14,7 +14,11 @@ namespace ToDoApp
     {
         static void Main(string[] args)
         {
+            // Estabelecendo a conexão com o banco de dados:
+            using (var connection = new SQLiteConnection("Data Source=database.db;"))
+            {
 
+            }
         }
     }
 }
