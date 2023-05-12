@@ -22,7 +22,7 @@ namespace ToDoApp.Data
 
         private void CreateTasksTable(SQLiteConnection connection)
         {
-            string createTableQuery = "CREATE TABLE IF NOT EXISTS Tasks (Id INTEGER PRIMARY KEY AUTOINCREMENT, Description TEXT, Completed INTEGER);";
+            string createTableQuery = "CREATE TABLE IF NOT EXISTS Tasks (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT, Description TEXT, Completed INTEGER);";
 
             using (var command = new SQLiteCommand(createTableQuery, connection))
             {
